@@ -1,3 +1,5 @@
+package Aula2;
+
 public class Atividade1 {
     public static void main(String[] args) {
         double preco_livro = 15.50;
