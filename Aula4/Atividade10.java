@@ -5,7 +5,7 @@ public class Atividade10 {
 
         System.out.println("Os convidados da festa são:");
 
-        for(String nomes: convidados){
+        for (String nomes : convidados) {
             System.out.println(nomes);
         }
     }
