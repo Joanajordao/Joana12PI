@@ -1,6 +1,7 @@
 package Teste;
 
 import java.util.Scanner;
+// import java.util.Arrays;
 
 public class Exercicio3 {
     public static void main (String [] args) {
@@ -147,7 +148,7 @@ public class Exercicio3 {
                 System.out.print(i + " ");
             }
         }
-        */
+        
 
         //10. Faça um programa que receba dois números inteiros e gere os números inteiros que estão no intervalo compreendido por eles.
 
@@ -159,7 +160,30 @@ public class Exercicio3 {
         System.out.print("Insira o segundo número: ");
         int numero2 = input.nextInt();
 
-        for ()
+        for (int i = numero1; i < numero2; i++){
+            System.out.print(i + " ");
+        }
+        */
+        
+        //11. Altere o programa anterior para mostrar no final a soma dos números.
+
+        Scanner input = new Scanner(System.in);
+
+        int soma = 0;
+
+        System.out.print("Insere o primeiro número: ");
+        int numero1 = input.nextInt();
+
+        System.out.print("Insira o segundo número: ");
+        int numero2 = input.nextInt();
+
+        for (int i = numero1; i < numero2; i++){
+            System.out.print(i + " ");
+            soma += i;
+        }
+
+        System.out.println("A soma dos números é " + soma);
+
 
 
 
