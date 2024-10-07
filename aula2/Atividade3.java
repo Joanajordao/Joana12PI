@@ -1,3 +1,5 @@
+package aula2;
+
 public class Atividade3 {
     public static void main(String[] args) {
         int numero = 3;
@@ -17,6 +19,7 @@ public class Atividade3 {
                 break;
             case 5:
                 System.out.println("Quinta-feira");
+                break;
             case 6:
                 System.err.println("Sexta-feira");
                 break;

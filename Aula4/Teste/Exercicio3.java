@@ -183,13 +183,5 @@ public class Exercicio3 {
         }
 
         System.out.println("A soma dos números é " + soma);
-
-
-
-
-
-
-
-
     }
 }
