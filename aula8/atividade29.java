@@ -19,9 +19,9 @@ public class atividade29 {
         }
     }
 
-    public static void mensagem_de_boas_vindas(Scanner input){
+    public static void mensagem_de_boas_vindas(Scanner input, String nome){
 
-        String nome;
+        //String nome;
 
         System.out.print("Introduza o seu nome: ");
         nome = input.next();        
@@ -30,9 +30,9 @@ public class atividade29 {
 
     }
 
-    public static void menu(Scanner input){
+    public static void menu(Scanner input, int opcao){
 
-        int opcao;
+        //int opcao;
     
         System.out.println("== Menu == \n 1 - Entradas\n 2 - Prato Carne\n 3 - Prato Peixe\n 4 - Sobremesa\n 5 - Sair");
         
