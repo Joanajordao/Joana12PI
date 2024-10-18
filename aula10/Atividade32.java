@@ -12,7 +12,5 @@ public class Atividade32 {
 
         System.out.println("Valor int: " + x);
         System.out.println("Valor float: " + y);
-
-
     }
 }
