@@ -1,6 +1,8 @@
+package aula10;
+
 import java.util.Scanner;
 
-public class atividade29 {
+public class atividade31 {
     public static void main(String[] args) {
         
         Scanner input = new Scanner(System.in);
@@ -11,7 +13,7 @@ public class atividade29 {
         if (idade >= 18){
             mensagem_de_boas_vindas(input);
             System.out.println();
-            menu_2(input);
+            menu(input, ' ');
         } else{
             mensagem_de_boas_vindas(input);
             System.out.println();
@@ -60,9 +62,9 @@ public class atividade29 {
         }while(opcao != 5);
     }
 
-    public static void menu_2(Scanner input){
+    public static int menu(Scanner input, int opcao){
 
-        int opcao;
+        //int opcao;
 
         System.out.println("== Menu == \n 1 - Entradas\n 2 - Prato Carne\n 3 - Prato Peixe\n 4 - Sobremesa\n 5 - Carta de Vinhos\n 6 - Sair");
 
@@ -92,5 +94,6 @@ public class atividade29 {
                     break;       
             }
         }while(opcao != 6);
+        return 0;
     }
 }
