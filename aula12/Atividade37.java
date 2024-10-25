@@ -12,27 +12,26 @@ public class Atividade37 {
                 System.out.print("Introduza o primeiro número: ");
                 n1 = input.nextInt();
                 System.out.print("Introduza o segundo número: ");
-                n2 = input.next();
+                input.nextLine();
+                n2 = input.nextLine();
 
-                if (" ".equals(n2)){
-                    System.out.println("Inválido.");
-                }
+                if (n2.isEmpty()){
+                    System.out.println("O valor não pode ser vazio");
+                    continue;
+                } 
+
                 int n = Integer.parseInt(n2);
-
                 float div = n1 / n;
                 System.out.println("A divisão dos números é " + div);
-
-            }while(" ".equals(n2));
+            
+            }while(n2.isEmpty());
 
 
         } catch (java.lang.ArithmeticException e){
             System.out.println("Erro: Não é possível dividir por zero.");
 
-        }catch (Exception e){
-            System.out.println("O valor não pode ser vazio ou contar apenas espaços.");
+        }catch (NumberFormatException e){
+            System.out.println("Erro: O valor não pode ser vazio ou contar apenas espaços.");
         }
-        
-
-
     }
 }
