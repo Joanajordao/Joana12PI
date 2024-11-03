@@ -6,6 +6,20 @@ public class Bolo {
     private int tamanho;
     private boolean cobertura;
 
+    //Construtor da classe com 2 parâmetros
+    public Bolo(String sabor, boolean cobertura){
+        this.sabor = sabor;
+        this.cobertura = cobertura;
+    }
+
+    //Construtor da classe
+    public Bolo(String sabor, int tamanho, boolean cobertura) {
+        this.sabor = sabor;
+        this.cobertura = cobertura;
+        this.tamanho = tamanho;
+    }
+
+    //Métodos Getter e Setter
     public String getSabor(){
         return sabor;
     }
@@ -41,7 +55,4 @@ public class Bolo {
     public void adicionarCobertura(){
         cobertura = true;
     }
-
-
-
 }
