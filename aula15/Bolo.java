@@ -1,6 +1,7 @@
 package aula15;
 //Criação de uma classe que não tem o método main
-public class Bolo {
+
+public abstract class Bolo {
     //Variáveis de instância
     private String sabor;
     private int tamanho;
@@ -55,4 +56,8 @@ public class Bolo {
     public void adicionarCobertura(){
         cobertura = true;
     }
+
+    //Forma de criação de um metodo abstrato
+    public abstract void tipoConfecao();
+    
 }
