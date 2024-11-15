@@ -1,9 +1,9 @@
 package aula20;
 
 public class Animal {
-    public raca; // +
-    private chip; // -
-    protected ano; // #
+    public String raca; // +
+    private int chip; // -
+    protected int ano; // #
 
     public void tamanho();
     private void registar();

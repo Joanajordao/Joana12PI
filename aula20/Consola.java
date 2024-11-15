@@ -1,9 +1,9 @@
 package aula20;
 
 public class Consola {
-    public comandos;
-    private preco;
-    protected localizacao;
+    public String comandos;
+    private int preco;
+    protected String localizacao;
 
     public void multiplayer();
     private void vender();

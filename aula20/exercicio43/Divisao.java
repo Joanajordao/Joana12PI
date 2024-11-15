@@ -1,10 +1,10 @@
 package aula20.exercicio43;
 
 public class Divisao implements Casa{
-    private divisoes;
-    private tinta;
-    private portas;
-    private janelas;
+    private int divisoes;
+    private String tinta;
+    private int portas;
+    private int janelas;
 
     @Override
     public void construir();
