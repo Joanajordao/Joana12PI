@@ -7,6 +7,10 @@ public abstract class Bolo {
     private int tamanho;
     private boolean cobertura;
 
+    //Variáveis para testar a interface
+    private String mensagem;
+    private String corDecoracao;
+
     //Construtor da classe com 2 parâmetros
     public Bolo(String sabor, boolean cobertura){
         this.sabor = sabor;
@@ -18,6 +22,23 @@ public abstract class Bolo {
         this.sabor = sabor;
         this.cobertura = cobertura;
         this.tamanho = tamanho;
+    }
+
+    //SET e GET das variáveis da interface
+    public String getMensagem() {
+        return mensagem;
+    }
+
+    public void setMensagem(String mensagem) {
+        this.mensagem = mensagem;
+    }
+
+    public String getCorDecoracao() {
+        return corDecoracao;
+    }
+
+    public void setCorDecoracao(String corDecoracao) {
+        this.corDecoracao = corDecoracao;
     }
 
     //Métodos Getter e Setter
@@ -59,5 +80,7 @@ public abstract class Bolo {
 
     //Forma de criação de um metodo abstrato
     public abstract void tipoConfecao();
+
+    
     
 }

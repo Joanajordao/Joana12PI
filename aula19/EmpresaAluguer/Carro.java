@@ -1,6 +1,6 @@
 package aula19.EmpresaAluguer;
 
-public class Carro extends Veiculo{
+public class Carro extends Veiculo implements Alugavel{
 
     //Construtor da classe
     public Carro (String marca, String cor, double preco, int dias){
@@ -14,6 +14,17 @@ public class Carro extends Veiculo{
     @Override
     public void travar(){
         System.out.println("Trava");
+    }   
+
+    @Override
+    public void exibirDetalhes(){
+        super.exibirDetalhes(); //Herança do veiculo
+        if (getAlugar() == true){
+            System.out.println("Alugar: " + getAlugar());
+        }
+        if (getDevolver() == true){
+            System.out.println("Devolver: " + getDevolver());
+        }
     }
 
 }

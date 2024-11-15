@@ -8,6 +8,10 @@ public abstract class Veiculo {
     private double preco;
     private int dias;
 
+    //Variáveis para testar a interface
+    private boolean alugar;
+    private boolean devolver;
+
     //Construtor da classe
     public Veiculo(String tipo, String marca, String cor, double preco, int dias){
         this.tipo = tipo;
@@ -15,6 +19,23 @@ public abstract class Veiculo {
         this.cor = cor;
         this.preco = preco;
         this.dias = dias;
+    }
+
+    //GET e SET das variáveis da interface
+    public boolean getAlugar() {
+        return alugar;
+    }
+
+    public void setAlugar(boolean alugar) {
+        this.alugar = alugar;
+    }
+
+    public Boolean getDevolver() {
+        return devolver;
+    }
+
+    public void setDevolver(Boolean devolver) {
+        this.devolver = devolver;
     }
 
     public String getTipo(){
