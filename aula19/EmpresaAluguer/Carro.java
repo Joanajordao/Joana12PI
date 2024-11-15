@@ -3,8 +3,8 @@ package aula19.EmpresaAluguer;
 public class Carro extends Veiculo{
 
     //Construtor da classe
-    public Carro (String marca, String cor, double preco){
-        super("Carro", marca, cor, preco);
+    public Carro (String marca, String cor, double preco, int dias){
+        super("Carro", marca, cor, preco, dias);
     }
 
     @Override

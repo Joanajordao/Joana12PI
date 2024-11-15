@@ -61,11 +61,10 @@ public abstract class Veiculo {
         System.out.println("Tipo de veículo: " + tipo);
         System.out.println("Marca: " + marca);
         System.out.println("Cor: " + cor);
-        System.out.println("Preço de aluguer: " + preco);
+        System.out.println("Preço de aluguer: " + (preco * dias));
     }
 
     //Forma de criação de um metodo abstrato
-    public abstract void precoAluguer(double preco, int dias);
     public abstract void acelerar();
     public abstract void travar();
 }

@@ -3,8 +3,8 @@ package aula19.EmpresaAluguer;
 public class Mota extends Veiculo{
 
     //Construtor da classe
-    public Mota (String marca, String cor, double preco){
-        super("Mota", marca, cor, preco);
+    public Mota (String marca, String cor, double preco, int dias){
+        super("Mota", marca, cor, preco, dias);
     }
 
     @Override
@@ -15,8 +15,5 @@ public class Mota extends Veiculo{
     public void travar(){
         System.out.println("Trava");
     }
-    @Override
-    public void precoAluguer(double preco, int dias){
-        preco = preco * dias;
-    }
+    
 }
