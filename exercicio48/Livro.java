@@ -44,7 +44,22 @@ public class Livro {
         return leitor;
     }
 
-    public void exibirDetalhes(){
+    //@Override
+    public void abrir(Boolean aberto){
+        aberto = true;
+    }
 
+    //@Override
+    public void fechar(Boolean aberto){
+        aberto = false;
+    }
+
+    public void exibirDetalhes(){
+        System.out.println("Título: " + titulo);
+        System.out.println("Autor: " + autor);
+        System.out.println("Total de páginas: " + totPaginas);
+        System.out.println("Página atual: " + pagAtual);
+        System.out.println("Aberto?: " + (aberto ? "Sim" : "Não"));
+        System.out.println("Leitor: " + leitor);
     }
 }
