@@ -2,7 +2,7 @@ package aula24;
 
 import java.util.LinkedList;
 
-public class exemplo4 {
+public class Exemplo4 {
     public static void main(String[] args) {
         //Criar uma linkedlist de amigos
         LinkedList<String> linkedlist = new LinkedList<>();
